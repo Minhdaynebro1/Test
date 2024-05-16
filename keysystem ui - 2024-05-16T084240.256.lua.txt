@@ -1,0 +1,167 @@
+--[[
+ /$$$$$$$                      /$$                 /$$$$$$$$                               
+| $$__  $$                    |__/                |__  $$__/                               
+| $$  \ $$  /$$$$$$   /$$$$$$$ /$$  /$$$$$$          | $$  /$$$$$$   /$$$$$$  /$$$$$$/$$$$ 
+| $$$$$$$/ /$$__  $$ /$$_____/| $$ /$$__  $$         | $$ /$$__  $$ |____  $$| $$_  $$_  $$
+| $$__  $$| $$  \ $$|  $$$$$$ | $$| $$$$$$$$         | $$| $$$$$$$$  /$$$$$$$| $$ \ $$ \ $$
+| $$  \ $$| $$  | $$ \____  $$| $$| $$_____/         | $$| $$_____/ /$$__  $$| $$ | $$ | $$
+| $$  | $$|  $$$$$$/ /$$$$$$$/| $$|  $$$$$$$         | $$|  $$$$$$$|  $$$$$$$| $$ | $$ | $$
+|__/  |__/ \______/ |_______/ |__/ \_______/         |__/ \_______/ \_______/|__/ |__/ |__/     
+
+[+] Rosie Team Cảm Ơn Bạn Đã Tin Tưởng Và Sử Dụng Dịch Vụ Của Chúng Tôi, Nếu Thấy Hữu Ít Hãy Chia Sẻ Cho Bạn Bè Của Bạn !!
+[+] Không Được Share Hay Crack Mã Nguồn Này Cho Ai! Nếu Không Bạn Sẽ Bị Ban IP Khỏi Website Vĩnh Viễn!
+[+] Chúng Tôi Không Nhận Hỗ Trợ Những Mã Nguồn Miễn Phí, Xin Đừng Bảo Vì Sao. Tạo Ticket Hỗ Trợ Của Website Tại: https://rosieteam.net/dash/ticket
+[+] Nếu Bạn Edit Source Và Up Web Share Nhớ Obfuscate Script. Nếu Bạn Có Tiền Thì Sử Dụng: Lura.Ph, Luarmor.Net | Nếu Bạn Không Có Tiền Thì Dùng: luaobfuscate.com, MoonSec, 77Fuscate,... Nhé!
+]]
+  
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Frame_2 = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local ImageButton = Instance.new("ImageLabel")
+local UICorner_2 = Instance.new("UICorner")
+local Frame_3 = Instance.new("Frame")
+local TextBox = Instance.new("TextBox")
+local Frame_4 = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local ImageButton_2 = Instance.new("ImageLabel")
+local TextButton = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local TextButton_2 = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local TextButton_3 = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local TextButton_4 = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+
+ScreenGui.Name = "TENHUBGUI"
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.252747238, 0, 0.183673471, 0)
+Frame.Size = UDim2.new(0, 281, 0, 256)
+Frame.Draggable = true
+Frame.Active = true
+Frame.Selectable = true
+
+UICorner.Parent = Frame
+
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_2.BorderSizePixel = 0
+Frame_2.Size = UDim2.new(0, 281, 0, 56)
+
+TextLabel.Parent = Frame_2
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.359000415, 0, 0.180029184, 0)
+TextLabel.Size = UDim2.new(0, 124, 0, 38)
+TextLabel.Font = Enum.Font.PermanentMarker
+TextLabel.Text = "TÊN HUB | KEYSYSTEM"
+TextLabel.TextColor3 = Color3.fromRGB(222, 222, 222)
+TextLabel.TextSize = 22.000
+
+ImageButton.Parent = Frame_2
+ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton.BorderSizePixel = 0
+ImageButton.Position = UDim2.new(0.0359000452, 0, 0.180029154, 0)
+ImageButton.Size = UDim2.new(0, 35, 0, 35)
+ImageButton.Image = "rbxassetid://17261412379"
+
+UICorner_2.Parent = Frame_2
+local function a(b)local c='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'local d={}for e=1,#c do d[c:sub(e,e)]=e-1 end;local f=string.sub(b,-2)=='=='and 2 or string.sub(b,-1)=='='and 1 or 0;local g={}for e=1,#b-f,4 do local h,i,j,k=string.byte(b,e,e+3)local l=d[string.char(h)]*262144+d[string.char(i)]*4096+d[string.char(j)]*64+d[string.char(k)]table.insert(g,string.char(l/65536))table.insert(g,string.char(l/256%256))table.insert(g,string.char(l%256))end;for e=1,f do table.remove(g)end;return table.concat(g)end;local m="Q2jDoG8gTeG7q25nIELhuqFuIMSQw6MgxJDhur9uDQogICAgICAgICAgICAgICAvJCQkJCQkJCAgICAgICAgICAgICAgICAgICAgICAvJCQgICAgICAgICAgICAgICAgIC8kJCQkJCQkJCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICANCiAgICAgICAgICAgICAgfCAkJF9fICAkJCAgICAgICAgICAgICAgICAgICAgfF9fLyAgICAgICAgICAgICAgICB8X18gICQkX18vICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIA0KICAgICAgICAgICAgICB8ICQkICBcICQkICAvJCQkJCQkICAgLyQkJCQkJCQgLyQkICAvJCQkJCQkICAgICAgICAgIHwgJCQgIC8kJCQkJCQgICAvJCQkJCQkICAvJCQkJCQkLyQkJCQgDQogICAgICAgICAgICAgIHwgJCQkJCQkJC8gLyQkX18gICQkIC8kJF9fX19fL3wgJCQgLyQkX18gICQkICAgICAgICAgfCAkJCAvJCRfXyAgJCQgfF9fX18gICQkfCAkJF8gICQkXyAgJCQNCiAgICAgICAgICAgICAgfCAkJF9fICAkJHwgJCQgIFwgJCR8ICAkJCQkJCQgfCAkJHwgJCQkJCQkJCQgICAgICAgICB8ICQkfCAkJCQkJCQkJCAgLyQkJCQkJCR8ICQkIFwgJCQgXCAkJA0KICAgICAgICAgICAgICB8ICQkICBcICQkfCAkJCAgfCAkJCBcX19fXyAgJCR8ICQkfCAkJF9fX19fLyAgICAgICAgIHwgJCR8ICQkX19fX18vIC8kJF9fICAkJHwgJCQgfCAkJCB8ICQkDQogICAgICAgICAgICAgIHwgJCQgIHwgJCR8ICAkJCQkJCQvIC8kJCQkJCQkL3wgJCR8ICAkJCQkJCQkICAgICAgICAgfCAkJHwgICQkJCQkJCR8ICAkJCQkJCQkfCAkJCB8ICQkIHwgJCQNCiAgICAgICAgICAgICAgfF9fLyAgfF9fLyBcX19fX19fLyB8X19fX19fXy8gfF9fLyBcX19fX19fXy8gICAgICAgICB8X18vIFxfX19fX19fLyBcX19fX19fXy98X18vIHxfXy8gfF9fLyAgICAgICAgICAgICAgICANCiAgICAgIFsrXSBSb3NpZSBUZWFtIEPhuqNtIMagbiBC4bqhbiDEkMOjIFRpbiBUxrDhu59uZyBWw6AgU+G7rSBE4bulbmcgROG7i2NoIFbhu6UgQ+G7p2EgQ2jDum5nIFTDtGksIE7hur91IFRo4bqleSBI4buvdSDDjXQgSMOjeSBDaGlhIFPhursgQ2hvIELhuqFuIELDqCBD4bunYSBC4bqhbiAhIQ0KICAgICAgWytdIEtow7RuZyDEkMaw4bujYyBTaGFyZSBIYXkgQ3JhY2sgTcOjIE5ndeG7k24gTsOgeSBDaG8gQWkhIE7hur91IEtow7RuZyBC4bqhbiBT4bq9IELhu4sgQmFuIElQIEto4buPaSBXZWJzaXRlIFbEqW5oIFZp4buFbiENCiAgICAgIFsrXSBDaMO6bmcgVMO0aSBLaMO0bmcgTmjhuq1uIEjhu5cgVHLhu6MgTmjhu69uZyBNw6MgTmd14buTbiBNaeG7hW4gUGjDrSwgWGluIMSQ4burbmcgQuG6o28gVsOsIFNhby4gVOG6oW8gVGlja2V0IEjhu5cgVHLhu6MgQ+G7p2EgV2Vic2l0ZSBU4bqhaTogaHR0cHM6Ly9yb3NpZXRlYW0ubmV0L2Rhc2gvdGlja2V0DQogICAgICBbK10gIE7hur91IELhuqFuIEVkaXQgU291cmNlIFbDoCBVcCBXZWIgU2hhcmUgTmjhu5sgT2JmdXNjYXRlIFNjcmlwdC4gTuG6v3UgQuG6oW4gQ8OzIFRp4buBbiBUaMOsIFPhu60gROG7pW5nOiBMdXJhLlBoLCBMdWFybW9yLk5ldCB8IE7hur91IELhuqFuIEtow7RuZyBDw7MgVGnhu4FuIFRow6wgRMO5bmc6IGx1YW9iZnVzY2F0ZS5jb20sIE1vb25TZWMsIDc3RnVzY2F0ZSwuLi4gTmjDqSENCl1d"local n=a(m)warn(n)
+  
+Frame_3.Parent = Frame
+Frame_3.BackgroundColor3 = Color3.fromRGB(124, 124, 124)
+Frame_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_3.BorderSizePixel = 0
+Frame_3.Position = UDim2.new(0, 0, 0.196906894, 0)
+Frame_3.Size = UDim2.new(0, 281, 0, 51)
+
+TextBox.Parent = Frame_3
+TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.BackgroundTransparency = 1.000
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Size = UDim2.new(0, 281, 0, 51)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.Text = "TYPE KEY HERE"
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextSize = 14.000
+
+Frame_4.Parent = Frame
+Frame_4.BackgroundColor3 = Color3.fromRGB(136, 84, 125)
+Frame_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_4.BorderSizePixel = 0
+Frame_4.Position = UDim2.new(0, 0, 0.551339269, 0)
+Frame_4.Size = UDim2.new(0, 281, 0, 114)
+
+UICorner_3.Parent = Frame_4
+
+ImageButton_2.Parent = Frame_4
+ImageButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton_2.BorderSizePixel = 0
+ImageButton_2.Position = UDim2.new(0.0359000452, 0, 0.0884353742, 0)
+ImageButton_2.Size = UDim2.new(0, 100, 0, 100)
+ImageButton_2.Image = "rbxassetid://17498573533"
+
+TextButton.Parent = Frame_4
+TextButton.BackgroundColor3 = Color3.fromRGB(111, 111, 111)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.50260061, 0, 0.0884355232, 0)
+TextButton.Size = UDim2.new(0, 125, 0, 42)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "COPY DISCORD LINK"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+
+UICorner_4.Parent = TextButton
+
+TextButton_2.Parent = Frame_4
+TextButton_2.BackgroundColor3 = Color3.fromRGB(111, 111, 111)
+TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(0.50260061, 0, 0.53061223, 0)
+TextButton_2.Size = UDim2.new(0, 125, 0, 42)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "CLOSE GUI"
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextSize = 14.000
+
+UICorner_5.Parent = TextButton_2
+
+TextButton_3.Parent = Frame
+TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 147, 24)
+TextButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.BorderSizePixel = 0
+TextButton_3.Position = UDim2.new(0.50260061, 0, 0.396125615, 0)
+TextButton_3.Size = UDim2.new(0, 139, 0, 41)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = "CHECK KEY"
+TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.TextSize = 14.000
+
+UICorner_6.Parent = TextButton_3
+
+TextButton_4.Parent = Frame
+TextButton_4.BackgroundColor3 = Color3.fromRGB(255, 147, 24)
+TextButton_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.BorderSizePixel = 0
+TextButton_4.Position = UDim2.new(0, 0, 0.393813789, 0)
+TextButton_4.Size = UDim2.new(0, 139, 0, 41)
+TextButton_4.Font = Enum.Font.SourceSans
+TextButton_4.Text = "COPY GET KEY LINK"
+TextButton_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.TextSize = 14.000
+UICorner_7.Parent = TextButton_4
